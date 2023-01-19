@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+    <section class="container">
+        <div class="logo">
+            <img src="Imagenes/Logo.png" alt="logo-alura" class="logo-alura">
+            <h1 class="titulo">Encriptador de Alura</h1>
+        </div>
+        <div class="area-encriptado">
+            <input class="area-texto" id="txtencriptar" type="text" placeholder="Ingrese su texto aqui">
+        </div>  
+        <div class="botones">
+            <p class="aviso"><span class="material-symbols-outlined">error</span>Solo minusculas y sin acentos</p>
+            <button class="boton-encriptar"  onclick="encriptar()">Encriptar</button>
+            <button class="boton-copiar"  id="bcopiar" onclick="copiar()">Copiar</button>
+            <button class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>    
+        </div>
+        <div class="area-desencriptado">
+            <img src="Imagenes/AlanTuring.png" alt="Alan-Turing" id="imgAlan"> 
+            <h2 id="textoAlan">Alan no encontro ningun mensaje</h2>
+            <textarea class="texto-desencriptar" id="txtdesencriptar" cols="20" rows="10" placeholder="Escriba el texto que desea encriptar o desencriptar..."></textarea>
+        </div>
+    </section>
+    <footer>
+        <p class="desarrollador">Desarrollado por: Mario Giankarlo Bellota Velarde</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/gbellota12/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Spideylml"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    </body>
+</html>
+
